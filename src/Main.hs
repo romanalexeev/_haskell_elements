@@ -2,13 +2,11 @@ import Transformations
 
 instance Transformable Int
 
-
-
 main = putStrLn( show( 
 	let 
-		x = 5 :: Int
-		n = 1 :: Int
+		x = 10 :: Int
+		n = 3 :: Int
 		f = (\i -> i * x)
-	in power x n f))
+	in power 1 n f))
 
 
