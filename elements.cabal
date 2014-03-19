@@ -16,7 +16,7 @@ cabal-version:       >=1.8
 
 executable elements
   main-is:				Main.hs
-  other-modules:		Orbits
+  other-modules:		Transformations
   build-depends:		base ==4.6.*
   hs-source-dirs:		src
   ghc-options			-W

@@ -1,8 +1,14 @@
-import Orbits
+import Transformations
 
-a = 5 :: Int
-b = 3 :: Int
+instance Transformable Int
 
-instance Powerable Int
-main = putStrLn (show (power a b (\i -> i * a)))
+
+
+main = putStrLn( show( 
+	let 
+		x = 5 :: Int
+		n = 1 :: Int
+		f = (\i -> i * x)
+	in power x n f))
+
 
