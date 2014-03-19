@@ -12,12 +12,24 @@ power_unary_test = putStrLn( show(
 distance_test = putStrLn( show(
 	let 
 		x = 2 :: Int
-		y = 3 :: Int
+		y = 8 :: Int
 		f = (\i -> i * x)
 		eq = (\a b -> a == b)
 		a = 10000
-	in distance 1 y f eq a eq
+	in distance x y f eq a
 	))
 
-main = distance_test
+
+collision_point_test = putStrLn( show(
+	let 
+		x = 2 :: Int
+		f = (\i -> if i < 10 then i + 1 else 0)
+		eq = (\a b -> a == b)
+		p = (\i -> True)
+		a = 10000
+		def = -1
+	in collision_point x f eq a def
+	))
+
+main = collision_point_test
 
